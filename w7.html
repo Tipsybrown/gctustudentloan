@@ -1,0 +1,43 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCTU LOAN LOGIN</title>
+
+</head>
+<body>
+<p>
+<img src="gctulogo.png" alt="gctu" width="200px" height="180px"
+</p>
+<p style="margin-top:20px"></p>
+
+<label for="username">Username</label>
+<input type="text" id="username" name="username" required><br>
+
+<p></p>
+<form>
+<label for="password">Password</label>
+<input type="password" id="password" name="password" required><br>
+
+
+
+
+</form>
+<button id="login" onclick="redirect()">next</button>
+<script>
+  function redirect() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if (username.trim() !== "" && password.trim() !== "") {
+      
+      window.location.href = "w8.html";
+    } else {
+      alert("Please enter both username and password.");
+    }
+  }
+</script>
+
+</body>
+</html>
